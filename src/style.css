@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    background-color: #63784a;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    color: #444;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.26);
+}
+
+.container {
+    margin: auto;
+    width: 430px;
+    height: 800px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+    background-color: #eee;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.26);
+}
+.container .title {
+    height: 80px;
+    padding: 0 10px;
+}
+.container canvas {
+    width: 350px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.container li {
+    margin-bottom: 10px;
+}
+.container label {
+    display: flex;
+    justify-content: space-between;
+}
+.container input[type='range'] {
+    width: 200px;
+}
+
+.bislider {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    margin: 40px auto;
+    user-select: none;
+    cursor: pointer;
+}
+.bislider .background {
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    border-radius: 5px;
+    background-color: #d6d6d6;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.26);
+}
+.bislider .thumb {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 14px;
+    width: 14px;
+    background-color: #1d88df;
+    border-radius: 100%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.26);
+}
+.bislider .background > span {
+    position: absolute;
+    padding: 30px;
+    color: #888;
+    font-size: 14pt;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+    20%,
+    60% {
+        transform: rotate(-25deg);
+    }
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
